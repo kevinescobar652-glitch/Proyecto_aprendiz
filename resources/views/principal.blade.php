@@ -2,6 +2,7 @@
 
 <head>
     <title>Sitema de gestion odontologica</title>
+    @vite(['resources/css/estilos.css','resources/css/estilosPlantillas.css'])
 
 </head>
 
@@ -11,11 +12,11 @@
             <h1>Sistema de Gestion Odontologica</h1>
         </div>
         <ul id="menu">
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Asignar</a></li>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="{{ route('asignar_cita') }}">Asignar</a></li>
             <li><a href="">Consultar Cita</a></li>
             <li><a href="">Cancelar Cita</a></li>
-            <li><a href="">Iniciar Sesion</a></li>
+            <li><a href="{{ route('iniciar_sesion') }} ">Iniciar Sesion</a></li>
         </ul>
         <div id="Contenido">
             <h2>Informacion General</h2>
